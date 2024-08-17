@@ -5,38 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      #test{
-        position: relative;
-        width: 100%;
-        height: 70vh;
-        z-index: -10;
-      }
-      .content{
-        position: relative;
-        max-width: 900px;
-      }
-      #test::after{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 500px;
-        background: white;
-        clip-path: polygon(0 75%, 100% 25%, 100% 100%, 0% 100%);
-        z-index: -10;
-      }
-      #test img{
-        display: overley;
-      }
-      </style>
     <title>ReccEngine</title>
 </head>
 <body>
     <header class="" style="background-image: url('assets/second-page/bg-banner-1.png'); background-repeat: no-repeat; background-size: cover;">
         <div class="min-h-96 bg-transparent opacity-95" style="background-image: url('assets/second-page/bg-banner-2.svg'); background-repeat: no-repeat; background-size: cover;">
-        <nav class="opacity-100">
+        <nav class="opacity-100 container mx-auto pb-4">
             <div class="navbar ">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -255,16 +229,18 @@
       </section>
       <!-- how it works -->
 
-      <section id="test" class="text-center flex flex-col bg-[#EDF4FF] text-black">
+      <section class="text-center flex flex-col bg-[#EDF4FF] text-black pb-16" style="background-image: url('/assets/second-page-how.jpg'); background-size: 100% 100%; height: 100%; width: 100%; background-repeat: no-repeat;">
         <h1 class="text-5xl font-bold text-wrap">How it Works</h1>
         <br>
         <p class="text-base text-wrap">
           Shop by simply snapping a photo and unlock a world of product inspiration
         </p>
-        <div class="w-full flex justify-center overflow-auto" style="background-image: url('assets/second-page/how-to-bg.svg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="w-full flex justify-center overflow-auto">
           <img src="assets/second-page/how-it-works-img.svg" alt="" class="">
         </div>
       </section >
+
+
       <section class="bg-white w-full py-16" style="background-image: url('assets/second-page/path-tosuccess-bg.svg'); background-size: cover; background-repeat: no-repeat;">
 
         <div class="container mx-auto text-center text-white space-y-8" >
